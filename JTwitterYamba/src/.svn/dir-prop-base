@@ -1,0 +1,17 @@
+K 10
+svn:ignore
+V 101
+bin
+gen
+out
+*.class
+*.pdf
+*.graffle
+.metadata
+.DS_Store
+Icon*
+.metadata
+courseware*
+book.dcpsgen.xml
+
+END
