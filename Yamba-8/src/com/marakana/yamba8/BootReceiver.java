@@ -9,7 +9,7 @@ import android.util.Log;
 
 public class BootReceiver extends BroadcastReceiver {
 
-  @Override
+  
   public void onReceive(Context context, Intent callingIntent) {
 
     // Check if we should do anything at boot at all
