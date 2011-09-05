@@ -18,7 +18,7 @@ public class YambaWidget extends AppWidgetProvider { // <1>
   public void onUpdate(Context context, AppWidgetManager appWidgetManager,
       int[] appWidgetIds) { // <2>
     Cursor c = context.getContentResolver().query(StatusProvider.CONTENT_URI,
-        null, null, null, null); // <3>
+        null, null, null, StatusData.C_CREATED_AT + " DESC"); // <3>
     try {
       if (c.moveToFirst()) { // <4>
         CharSequence user = c.getString(c.getColumnIndex(StatusData.C_USER)); // <5>
